@@ -1,5 +1,5 @@
 class ntp {
-  package { 'ntpd':
+  package { 'ntp':
     ensure => 'present',
     }
 
