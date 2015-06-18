@@ -9,7 +9,7 @@ class ntp {
     group   => 'root',
     mode    => '0600',
     source  => 'puppet:///modules/ntp/ntp_conf',
-    require => Package['ntpd'],
+    require => Package['ntp'],
     notify  => Service['ntpd'],
     }
 
